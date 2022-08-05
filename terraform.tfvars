@@ -1,4 +1,5 @@
 #bucket and KMS key variables
+project_id = "internal-test-prj-ly"
 keyring_name = "cloudbuild-keyring9"
 keyring_location = "us-central1"
 key_name = "cloudbuildkey9"
