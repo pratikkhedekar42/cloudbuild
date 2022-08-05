@@ -1,5 +1,5 @@
 data "google_project" "project" {
-  project     = var.project_id
+  project_id     = var.project_id
 }
 #keyring creation
 resource "google_kms_key_ring" "keyring" {
