@@ -29,6 +29,6 @@ module "build-trigger"{
     organization_owner = var.organization_owner
     repo_name = var.repo_name
     branch_name = var.branch_name
-    comment_control = var.comment_control
+    invert_regex = var.invert_regex
     file_name = var.file_name
 }
