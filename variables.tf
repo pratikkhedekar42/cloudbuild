@@ -1,3 +1,6 @@
+variable "project_id"{
+    type = string
+}
 variable "keyring_name" {
  description = "KMS Keyring used for encryption keys"
  type        = string
