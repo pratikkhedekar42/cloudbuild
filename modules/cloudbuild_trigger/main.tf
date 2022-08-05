@@ -1,4 +1,6 @@
-data "google_project" "project" {}
+data "google_project" "project" {
+ project     = var.project_id
+}
 
 # User-managed Service Account
 resource "google_service_account" "custom-sa" {
