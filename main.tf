@@ -12,6 +12,7 @@ module "google-cloud-build-worker-pool"{
 module "gcs-bucket"{
     source = "./modules/gcs_bucket"
     keyring_name = var.keyring_name
+    project_id = var.project_id
     keyring_location = var.keyring_location
     key_name = var.key_name
     gcs_bucket_name = var.gcs_bucket_name
@@ -24,6 +25,7 @@ module "gcs-bucket"{
 module "build-trigger"{
     source = "./modules/cloudbuild_trigger"
     trigger_name = var.trigger_name
+    project_id = var.project_id
     custom-sa_name = var.custom-sa_name
     cloudbuild_sa_roles = var.cloudbuild_sa_roles
     organization_owner = var.organization_owner
