@@ -1,4 +1,6 @@
-data "google_project" "project" {}
+data "google_project" "project" {
+  project     = var.project_id
+}
 #keyring creation
 resource "google_kms_key_ring" "keyring" {
   name     = var.keyring_name
